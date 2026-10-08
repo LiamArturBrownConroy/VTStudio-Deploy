@@ -1,0 +1,7 @@
+
+# Preserve ClickOnce deployment files byte-for-byte
+*.application -text
+*.manifest -text
+*.deploy -text
+*.exe -text
+*.dll -text
