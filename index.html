@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VTStudio - Audio recording and editing for Windows.">
+  <title>VTStudio | Audio Editor for Windows</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0b1120;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #253047;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand { font-size: 23px; font-weight: 800; }
+    .brand span { color: #38bdf8; }
+    .version { color: #94a3b8; font-size: 14px; }
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 95px 24px 80px;
+    }
+    .eyebrow {
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.12;
+      margin: 18px 0;
+    }
+    .hero p {
+      color: #a9b8cc;
+      font-size: 19px;
+      max-width: 650px;
+      margin: 0 auto 34px;
+    }
+    .button {
+      display: inline-block;
+      padding: 16px 32px;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: #06111e;
+      font-weight: 800;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+    }
+    .button:hover {
+      background: #7dd3fc;
+      transform: translateY(-2px);
+    }
+    .note {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+    section {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 35px 24px 70px;
+    }
+    h2 { font-size: 30px; margin-bottom: 25px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #141f33;
+      border: 1px solid #2a3952;
+      border-radius: 14px;
+      padding: 25px;
+    }
+    .card h3 { margin: 0 0 10px; }
+    .card p { color: #a9b8cc; margin: 0; }
+    .steps { color: #cbd5e1; padding-left: 25px; }
+    .steps li { padding: 7px 0; }
+    .warning {
+      background: #1b2537;
+      border-left: 3px solid #fbbf24;
+      padding: 16px 20px;
+      border-radius: 6px;
+      color: #cbd5e1;
+      margin-top: 22px;
+    }
+    footer {
+      text-align: center;
+      border-top: 1px solid #253047;
+      padding: 30px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">VT<span>Studio</span></div>
+    <div class="version">Windows Desktop Application</div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">Audio editing made simple</div>
+      <h1>Record. Edit.<br> Create.</h1>
+      <p>
+        VTStudio is a Windows audio recording and editing application
+        designed to make working with audio clips straightforward.
+      </p>
+      <a class="button" href="./setup.exe" download>
+        &#8595; Install VTStudio
+      </a>
+      <div class="note">
+        Windows 10/11 &bull; Free development preview
+      </div>
+    </div>
+
+    <section>
+      <h2>What you can do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>&#127908; Record audio</h3>
+          <p>Capture recordings directly from your microphone.</p>
+        </div>
+        <div class="card">
+          <h3>&#9986; Edit clips</h3>
+          <p>Cut, copy, paste, split, and organize audio.</p>
+        </div>
+        <div class="card">
+          <h3>&#127925; Work with waveforms</h3>
+          <p>View and navigate audio visually while editing.</p>
+        </div>
+        <div class="card">
+          <h3>&#8635; Automatic updates</h3>
+          <p>Receive new versions through the built-in update system.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How to install</h2>
+      <ol class="steps">
+        <li>Click <strong>Install VTStudio</strong> above.</li>
+        <li>Open the downloaded <strong>setup.exe</strong> file.</li>
+        <li>Follow the Windows installation prompts.</li>
+        <li>Launch VTStudio from the Start menu or its shortcut.</li>
+      </ol>
+      <div class="warning">
+        <strong>Development preview:</strong> VTStudio is currently
+        distributed without a trusted publisher certificate.
+        Windows may display an Unknown Publisher or SmartScreen
+        warning. Install only if you trust the source.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    VTStudio &bull; Built for Windows &bull; Development Preview
+  </footer>
+</body>
+</html>
